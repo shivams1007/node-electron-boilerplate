@@ -3,16 +3,19 @@
   "version": "1.0.0",
   "description": "a simple electron app with nodejs",
   "main": "main.js",
-  "homepage": "https://github.com/maximegris/angular-electron",
+  "homepage": "https://github.com/shivams1007/node-electron-boilerplate",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+"
+    "url": "https://github.com/shivams1007/node-electron-boilerplate.git"
   },
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
     "start": "electron .",
-    "build": "electron-builder build --publish=never"
+    "build": "electron-builder build --publish=never",
+    "build:win": "electron-builder build --win --publish=never",
+    "build:linux": "electron-builder build --linux --publish=never",
+    "build:mac": "electron-builder build --max --publish=never"
   },
   "author": "Shivam",
   "license": "ISC",

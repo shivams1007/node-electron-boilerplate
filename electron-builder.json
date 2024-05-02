@@ -32,15 +32,16 @@
     "deleteAppDataOnUninstall": true
   },
   "mac": {
-    "icon": "icons",
+    "icon": "public/icons",
     "target": [
       "dmg"
     ]
   },
   "linux": {
-    "icon": "icons",
+    "icon": "public/icons",
     "target": [
       "AppImage"
-    ]
+    ],
+    "category": "Development"
   }
 }
