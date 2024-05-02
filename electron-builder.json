@@ -1,0 +1,46 @@
+{
+  "appId": "com.electronnode.demo",
+  "productName": "Node Electron Demo",
+  "artifactName": "Node Electron Demo Setup-${version}.${ext}",
+  "compression": "maximum",
+  "asar": true,
+  "directories": {
+    "output": "release/"
+  },
+  "files": [
+    "**/*",
+    "!**/*.ts",
+    "!*.map",
+    "!package.json",
+    "!package-lock.json",
+    {
+      "from": "../server",
+      "filter": ["**/*"]
+    }
+  ],
+  "win": {
+    "icon": "icons",
+    "target": [
+      "nsis"
+    ]
+  },
+  "nsis": {
+    "oneClick": false,
+    "perMachine": true,
+    "allowToChangeInstallationDirectory": true,
+    "include": "build/installer.nsh",
+    "deleteAppDataOnUninstall": true
+  },
+  "mac": {
+    "icon": "icons",
+    "target": [
+      "dmg"
+    ]
+  },
+  "linux": {
+    "icon": "icons",
+    "target": [
+      "AppImage"
+    ]
+  }
+}

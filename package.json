@@ -1,0 +1,26 @@
+{
+  "name": "electron-node",
+  "version": "1.0.0",
+  "description": "a simple electron app with nodejs",
+  "main": "main.js",
+  "homepage": "https://github.com/maximegris/angular-electron",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+"
+  },
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "start": "electron .",
+    "build": "electron-builder build --publish=never"
+  },
+  "author": "Shivam",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.2",
+    "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
