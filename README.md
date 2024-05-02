@@ -74,5 +74,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 Special thanks to [Electron](https://www.electronjs.org/) and the Node.js community for their amazing work and contributions.
-
-```
